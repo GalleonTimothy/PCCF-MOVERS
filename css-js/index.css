@@ -1,0 +1,96 @@
+.side-bar ul li.dashboard {
+    background: #f8f8f8;
+}
+
+
+.side-bar ul li.dashboard a {
+    color: #FFA600;
+}
+
+.contain .total-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.contain .total-box .box {
+    width: 24%;
+    height: auto;
+    aspect-ratio: 16/8;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(153, 153, 153, 0.534);
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.contain .total-box .box .total {
+    position: relative;
+}
+
+.total .title {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 200px;
+}
+
+.total .icon {
+    width: 40px;
+    height: 40px;
+    background: red;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.contain .total-box .box .total .icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    rotate: 75deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain .total-box .box .total .icon ion-icon {
+    rotate: -75deg;
+}
+
+.contain .total-box .box .total-event .icon {
+    background: #ffe8b4;
+    color: #ac7a07;
+}
+
+.contain .total-box .box .total-users .icon {
+    background: #c9e5ff;
+    color: #5d9fd6;
+}
+
+.contain .total-box .box .total-participants .icon {
+    background: #88fdc7;
+    color: #07c96e;
+}
+
+.contain .total-box .box .total-admin .icon {
+    background: #f7d4d8;
+    color: #e05260;
+}
+
+
+.contain .total-box .box .total .added {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #FFA600;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}

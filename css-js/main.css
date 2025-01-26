@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header .logo{
+    width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img{
+    height: 20px;
+}
+
+.header .account{
+    background: black;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.side-bar {
+    width: 225px;
+    height: 100%;
+    background: white;
+    padding-top: 60px;
+    position: relative;
+}
+
+.side-bar .title{
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #424242;
+    font-family: "Satisfy", serif !important;
+}
+
+.side-bar ul{
+    list-style: none;
+}
+
+.side-bar ul li{
+    width: 100%;
+    background: white;
+    padding: 10px 20px;
+}
+
+.side-bar ul li:hover {
+    background: #f8f8f8;
+}
+
+.side-bar ul li:hover a{
+    color: #FFA600;
+}
+
+
+
+
+.side-bar ul li a{
+    color: #5e5e5e;
+    font-size: .9rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex ;
+    gap: 5px;
+    align-items: center;
+}
+
+
+.side-bar ul li a span{
+    margin-top: 2px;
+}
+
+.side-bar .logout{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    padding: 0 20px;
+    height: auto;
+}
+
+.side-bar .logout button{
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.side-bar .logout button:hover{
+    color: #FFA600;
+}
+
+.side-bar ul li a ion-icon{
+    font-size: 1rem;
+}
+
+
+.container{
+    width: calc(100% - 225px);
+    height: 100%;
+    background: white;
+    padding: 60px 0 0 0;
+    overflow: hidden;
+}
+
+.container .contain {
+    background: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
